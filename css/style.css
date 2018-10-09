@@ -611,9 +611,152 @@ header:before{
     font-weight: 400;
     letter-spacing: 0.72px;
 }
+.swiper-wrap{
+    margin: 70px 0;
+    position: relative;
+}
+.swiper-container {
+    width: 100%;
+    min-height: 360px;
+}
+.swiper-navigation{
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-pagination-fraction{
+    position: relative;
+    width: 50px;
+    bottom: 0;
+    margin: 0 20px;
+}
+.swiper-pagination-current{
+    /*font-weight: bold;*/
+    font-size: 1.2rem;
+}
+.swiper-pagination-total{
+    font-size: 1rem;
+}
+.swiper-nav{
+    display: block;
+    color: #34ce57;
+    font-size: 2.5rem;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+}
+.sec3-right-block-top{
+    padding-top: 20px;
+}
+.sec3-right-block-top p{
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.96px;
+}
+.sec3-right-block-top span{
+    color: #498c1f;
+    font-family: "Roboto - Bold", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.96px;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+.sec3-right-block-bottom{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec3-right-block-bottom-text{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 52.01px;
+    letter-spacing: 0.72px;
+}
+.sec3-right-block-price{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 52.01px;
+    letter-spacing: 0.96px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form-input{
+    border: none;
+    outline: none;
+    border: 1px solid #295c0f;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 15px;
+}
+.form-btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding: 0 15px 0 5px;
+    width: 300px;
+    margin: 15px;
+}
+.form-btn span{
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+}
 
 
-
+/* --------------- section-4 ---------*/
+.section-4{
+    position: relative;
+    background: url("../images/bg_sec_4-min.png") no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+}
+.section-4:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: 0;
+}
+.section-4-content{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-4-content img{
+    position: relative;
+}
+.section-4-content p{
+    width: 600px;
+    position: relative;
+    color: #f9f9f9;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 15px;
+}
 @media all and (max-width: 1199px){
     /*---- section-1 -----*/
 
@@ -622,8 +765,36 @@ header:before{
         font-size: 1.3rem;
     }
     /*---- section-3 -----*/
+    .swiper-navigation{
+
+        bottom: 50px;
+        right: 15%;
+    }
+    /*---- section-4 -----*/
 }
-@media all and (max-width: 750px){
+@media all and (max-width: 991px){
+    /*---- section-1 -----*/
+
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+    .swiper-navigation{
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    .sec3-right-block-bottom{
+        margin-bottom: 50px;
+    }
+    /*---- section-4 -----*/
+    .section-4-content a{
+        margin-top: 150px;
+    }
+    .section-4-content p{
+        text-align: center;
+    }
+}
+@media all and (max-width: 767px){
     /*---- section-1 -----*/
     .header-title{
         font-size: 2.5rem;
@@ -635,6 +806,11 @@ header:before{
         width: 330px;
     }
     /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+
 }
 @media all and (max-width: 710px){
     /*---- section-1 -----*/
@@ -656,6 +832,8 @@ header:before{
     /*---- section-2 -----*/
 
     /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
 }
 @media all and (max-width: 530px){
     /*---- section-1 -----*/
@@ -669,6 +847,8 @@ header:before{
     /*---- section-2 -----*/
 
     /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
 }
 @media all and (max-width: 365px){
     /*---- section-1 -----*/
@@ -685,4 +865,6 @@ header:before{
     /*---- section-2 -----*/
 
     /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
 }
