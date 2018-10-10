@@ -757,6 +757,63 @@ header:before{
     font-weight: 700;
     padding: 15px;
 }
+
+
+/* --------------- section-5 ---------*/
+.section-5{
+    padding: 100px 0 50px 0;
+}
+
+.sec-5-header .section-title{
+    padding-bottom: 10px;
+}
+.sec-5-header .sec3-under-title{
+    font-size: 1.4rem;
+}
+.sec-5-gallery{
+    padding: 50px 0;
+}
+.sec-5-gallery .big-item{
+    object-fit: cover;
+    height: 400px;
+}
+.sec-5-gallery .small-item{
+    object-fit: cover;
+    height: 192px;
+}
+.sec-5-gallery-first-line{
+    margin-bottom: 15px;
+}
+
+.swiper-wrap-sec5{
+    padding: 0 100px;
+}
+.swiper-sec5 {
+    min-height: 400px;
+}
+.swiper-navigation-sec5{
+    bottom: 10px;
+}
+.review-img img{
+    min-height: 400px;
+}
+.review-text{
+    padding-top: 30px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.review-username{
+    padding-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 1.6px;
+}
+.review-username i{
+    color: #ef017c;
+}
+
 @media all and (max-width: 1199px){
     /*---- section-1 -----*/
 
@@ -771,6 +828,14 @@ header:before{
         right: 15%;
     }
     /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+    .swiper-wrap-sec5{
+        padding: 0;
+    }
+    .swiper-navigation-sec5{
+        bottom: 10px;
+    }
 }
 @media all and (max-width: 991px){
     /*---- section-1 -----*/
@@ -787,11 +852,17 @@ header:before{
         margin-bottom: 50px;
     }
     /*---- section-4 -----*/
-    .section-4-content a{
-        margin-top: 150px;
+    .section-4-content{
+        flex-direction: column;
+        justify-content: center;
     }
     .section-4-content p{
         text-align: center;
+        width: 100%;
+    }
+    /*---- section-5 -----*/
+    .swiper-sec5 {
+        padding-bottom: 70px;
     }
 }
 @media all and (max-width: 767px){
@@ -810,6 +881,8 @@ header:before{
     /*---- section-3 -----*/
 
     /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
 
 }
 @media all and (max-width: 710px){
@@ -834,6 +907,21 @@ header:before{
     /*---- section-3 -----*/
 
     /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+}
+@media all and (max-width: 575px){
+    /*---- section-5 -----*/
+    .sec-5-gallery .big-item, .sec-5-gallery .small-item{
+        width: 100%;
+        height: 100%;
+    }
+    .small-mb{
+        margin-bottom: 15px;
+    }
+    .review-img img{
+        min-height: 200px;
+    }
 }
 @media all and (max-width: 530px){
     /*---- section-1 -----*/
@@ -849,6 +937,8 @@ header:before{
     /*---- section-3 -----*/
 
     /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
 }
 @media all and (max-width: 365px){
     /*---- section-1 -----*/
@@ -867,4 +957,6 @@ header:before{
     /*---- section-3 -----*/
 
     /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
 }

@@ -1,16 +1,17 @@
 new WOW().init();
 
 $(document).ready(function () {
-    var swiper = new Swiper($('.swiper-container'), {
+    var swiper_sec3 = new Swiper($('.swiper-sec3'), {
         pagination: {
-            el: $('.swiper-pagination'),
+            el: $('.swiper-pagination-sec3'),
             type: 'fraction',
         },
         navigation: {
-            nextEl: $('.swiper-next'),
-            prevEl: $('.swiper-prev'),
+            nextEl: $('.swiper-next-sec3'),
+            prevEl: $('.swiper-prev-sec3'),
         },
     });
+
 });
 
 $(".youtube-link").grtyoutube();
@@ -29,3 +30,17 @@ $(".youtube-link").grtyoutube();
     })
 })(jQuery));
 
+
+$(document).ready(function () {
+    var swiper_sec5 = new Swiper($('.swiper-sec5'), {
+        pagination: {
+            el: $('.swiper-pagination-sec5'),
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: $('.swiper-next-sec5'),
+            prevEl: $('.swiper-prev-sec5'),
+        },
+    });
+
+});
