@@ -438,7 +438,8 @@ input[type=text], textarea {
 header{
     min-height: 100vh;
     position: relative;
-    background: #ffffff url("../images/bg_header-min.png") no-repeat center center;
+    background: #ffffff url("../images/bg_header-min.png") center center no-repeat;
+    background-size: cover;
 }
 header:before{
     content: "";
@@ -709,6 +710,9 @@ header:before{
     width: 300px;
     margin: 15px;
 }
+.form-btn-sec3{
+    width: 260px;
+}
 .form-btn span{
     width: 34px;
     height: 34px;
@@ -761,7 +765,7 @@ header:before{
 
 /* --------------- section-5 ---------*/
 .section-5{
-    padding: 100px 0 50px 0;
+    padding: 100px 0 10px 0;
 }
 
 .sec-5-header .section-title{
@@ -792,7 +796,7 @@ header:before{
     min-height: 400px;
 }
 .swiper-navigation-sec5{
-    bottom: 10px;
+    bottom: 0;
 }
 .review-img img{
     min-height: 400px;
@@ -812,6 +816,54 @@ header:before{
 }
 .review-username i{
     color: #ef017c;
+}
+
+
+/* --------------- section-6 ---------*/
+.address-wrap{
+    padding: 50px 0 50px 0;
+    background-color: #fbfbfb;
+}
+.address-container{
+    float: right;
+    padding-right: 12%;
+}
+.address-title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 52.01px;
+    letter-spacing: 2.88px;
+}
+.address-under-title{
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 52.01px;
+    letter-spacing: 1.44px;
+}
+.contacts a{
+    color: black;
+}
+.contacts i{
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: #477339;
+}
+.contacts p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 52.01px;
+    letter-spacing: 0.72px;
+}
+.footer-btn{
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+@media all and (max-width: 1300px){
+    .address-container{
+        padding-right: 17%;
+    }
 }
 
 @media all and (max-width: 1199px){
@@ -834,7 +886,15 @@ header:before{
         padding: 0;
     }
     .swiper-navigation-sec5{
-        bottom: 10px;
+        bottom: 0;
+    }
+    /*---- section-6 -----*/
+    .address-container{
+        float: left;
+        padding-left: 10%;
+    }
+    .map-wrap{
+        min-height: 400px;
     }
 }
 @media all and (max-width: 991px){
@@ -861,8 +921,18 @@ header:before{
         width: 100%;
     }
     /*---- section-5 -----*/
+    .swiper-wrap-sec5 {
+        margin-bottom: 0;
+    }
     .swiper-sec5 {
         padding-bottom: 70px;
+    }
+    /*---- section-6 -----*/
+    .address-wrap{
+        padding: 50px 15px;
+    }
+    .address-container {
+         padding-right: 0;
     }
 }
 @media all and (max-width: 767px){
@@ -883,6 +953,8 @@ header:before{
     /*---- section-4 -----*/
 
     /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
 
 }
 @media all and (max-width: 710px){
@@ -909,8 +981,18 @@ header:before{
     /*---- section-4 -----*/
 
     /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
 }
 @media all and (max-width: 575px){
+    /*---- section-1 -----*/
+
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+
     /*---- section-5 -----*/
     .sec-5-gallery .big-item, .sec-5-gallery .small-item{
         width: 100%;
@@ -921,6 +1003,10 @@ header:before{
     }
     .review-img img{
         min-height: 200px;
+    }
+    /*---- section-6 -----*/
+    .address-container{
+        padding:0;
     }
 }
 @media all and (max-width: 530px){
@@ -939,6 +1025,20 @@ header:before{
     /*---- section-4 -----*/
 
     /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
+    .address-title{
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 40.01px;
+        letter-spacing: 2.88px;
+    }
+    .address-under-title{
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 30.01px;
+        letter-spacing: 1.44px;
+    }
 }
 @media all and (max-width: 365px){
     /*---- section-1 -----*/
@@ -959,4 +1059,6 @@ header:before{
     /*---- section-4 -----*/
 
     /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
 }

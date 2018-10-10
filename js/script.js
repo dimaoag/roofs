@@ -44,3 +44,8 @@ $(document).ready(function () {
     });
 
 });
+
+
+$('.modal-submit-btn').click(function () {
+    $('.modal-form').modal('hide');
+});
