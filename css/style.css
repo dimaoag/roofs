@@ -384,14 +384,25 @@ a, a:visited { /* порядок правил для ссылок имеет з�
 }
 
 a:hover {
-    color: white;
+    color: #eeeeee;
     text-decoration: none;
     /*font-weight: bold;*/
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-
+button:hover{
+    color: #eeeeee;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+svg:hover .play{
+    fill: #5fc60f;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 a:focus, a:active {
     color: white;
     text-decoration: none;
@@ -466,7 +477,7 @@ header:before{
 .large-logo{
     /*font-family: Intro, sans-serif;*/
     font-size: 1.87rem;
-    color: #77e626;
+    color: #5fc60f;
     font-weight: bold;
     white-space: nowrap;
     text-transform: uppercase;
@@ -494,7 +505,7 @@ header:before{
     box-shadow: 3px 2px 1px 1px rgba(0, 0, 0, 0.19), 0 0 6px 1px rgba(41, 92, 15, 0.96);
     font-weight: 500;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     white-space: nowrap;
 }
@@ -644,7 +655,7 @@ header:before{
 }
 .swiper-nav{
     display: block;
-    color: #34ce57;
+    color: #5fc60f;
     font-size: 2.5rem;
     cursor: pointer;
     outline: none;
@@ -659,6 +670,8 @@ header:before{
     font-weight: 400;
     letter-spacing: 0.96px;
 }
+
+
 .sec3-right-block-top span{
     color: #498c1f;
     font-family: "Roboto - Bold", sans-serif;
@@ -695,8 +708,8 @@ header:before{
     border: none;
     outline: none;
     border: 1px solid #295c0f;
-    padding: 10px 20px;
-    width: 300px;
+    padding: 10px;
+    width: 260px;
     border-radius: 20px;
     margin: 15px;
 }
@@ -707,10 +720,15 @@ header:before{
     border-radius: 20px;
     font-size: 1.2rem;
     padding: 0 15px 0 5px;
-    width: 300px;
+    width: 260px;
     margin: 15px;
 }
+.form-btn svg{
+    width: 20px;
+    height: 20px;
+}
 .form-btn-sec3{
+    padding: 2px 3px;
     width: 260px;
 }
 .form-btn span{
@@ -813,11 +831,30 @@ header:before{
     font-style: italic;
     line-height: 30px;
     letter-spacing: 1.6px;
+
+}
+.review-username a{
+    color: black;
+}
+.review-username a:hover{
+    color: #777777;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .review-username i{
-    color: #ef017c;
+    padding: 1px;
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
+.form-input-sec5, .form-btn-sec5{
+    width: 290px;
+}
+.form-btn-sec5{
+    padding: 3px 3px;
+}
 
 /* --------------- section-6 ---------*/
 .address-wrap{
@@ -1018,6 +1055,9 @@ header:before{
     .center-block-btn{
         width: 330px;
     }
+    .header-phone-left{
+        font-size: 1rem;
+    }
     /*---- section-2 -----*/
 
     /*---- section-3 -----*/
@@ -1043,6 +1083,7 @@ header:before{
 @media all and (max-width: 365px){
     /*---- section-1 -----*/
     .header-title{
+        margin-top: 20px;
         font-size: 1.4rem;
         line-height: 40px;
     }
@@ -1059,6 +1100,8 @@ header:before{
     /*---- section-4 -----*/
 
     /*---- section-5 -----*/
-
+    .form-input-sec5, .form-btn-sec5{
+        margin: 10px 0;
+    }
     /*---- section-6 -----*/
 }
