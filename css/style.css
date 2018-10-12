@@ -384,7 +384,7 @@ a, a:visited { /* порядок правил для ссылок имеет з�
 }
 
 a:hover {
-    color: #eeeeee;
+    color: #dddddd;
     text-decoration: none;
     /*font-weight: bold;*/
     -webkit-transition: all 0.3s ease;
@@ -449,7 +449,7 @@ input[type=text], textarea {
 header{
     min-height: 100vh;
     position: relative;
-    background: #ffffff url("../images/bg_header-min.png") center center no-repeat;
+    background: #ffffff url("../images/roofs_header_bg.jpg") center center no-repeat;
     background-size: cover;
 }
 header:before{
@@ -498,8 +498,12 @@ header:before{
     font-weight: 500;
     white-space: nowrap;
 }
+.bg-form{
+    background-color: #00aa00!important;
+}
 .button{
     color: white;
+    outline: none;
     background-color: #846db1;
     background-image: linear-gradient(7deg, #295c0f 0%, #68cf1a 100%);
     box-shadow: 3px 2px 1px 1px rgba(0, 0, 0, 0.19), 0 0 6px 1px rgba(41, 92, 15, 0.96);
@@ -508,9 +512,42 @@ header:before{
     /*justify-content: space-between;*/
     align-items: center;
     white-space: nowrap;
+    position: relative;
+}
+.button:focus{
+    color: white;
+    outline: none;
+    /*!*background: #498c1f;*!*/
+    /*background-image: linear-gradient(140deg, #295c0f 0%, #498c1f 100%);*/
+    /*-webkit-transition: all 1s ease;*/
+    /*-o-transition: all 1s ease;*/
+    /*transition: all 1s ease;*/
+}
+.button:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-image: linear-gradient(140deg, #295c0f 0%, #498c1f 100%);
+    transition: opacity 0.5s ease-out;
+    z-index: 1;
+    opacity: 0;
+    color: white;
+}
+.button:hover:after {
+    opacity: 0.5;
+    color: white;
+}
+.button span{
+    z-index: 5;
 }
 .button p{
     padding: 0 10px;
+    z-index: 5;
+    color: white;
 }
 .button i{
     height: 30px;
@@ -521,6 +558,7 @@ header:before{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 
 }
 .btn-header-feedback{
@@ -720,7 +758,7 @@ header:before{
     border-radius: 20px;
     font-size: 1.2rem;
     padding: 0 15px 0 5px;
-    width: 260px;
+    width: 270px;
     margin: 15px;
 }
 .form-btn svg{
@@ -729,7 +767,8 @@ header:before{
 }
 .form-btn-sec3{
     padding: 2px 3px;
-    width: 260px;
+    width: 270px;
+    height: 40px;
 }
 .form-btn span{
     width: 34px;
@@ -851,9 +890,27 @@ header:before{
 }
 .form-input-sec5, .form-btn-sec5{
     width: 290px;
+    height: 40px;
 }
 .form-btn-sec5{
     padding: 3px 3px;
+}
+.form-input-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: black;
+}
+#phone-error{
+    padding-left: 15px;
 }
 
 /* --------------- section-6 ---------*/

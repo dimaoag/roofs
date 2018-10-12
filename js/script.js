@@ -46,6 +46,57 @@ $(document).ready(function () {
 });
 
 
-$('.modal-submit-btn').click(function () {
-    $('.modal-form').modal('hide');
+$('.modal-submit-btn-success').click(function () {
+    $('.modal-form button.close').trigger('click');
+});
+
+$('.js-form').each(function(){
+    var $this = $(this);
+    $this.validate({
+        highlight: function(element) {
+            setTimeout(function(){
+                $(element).closest('.b-field').addClass('has-error');
+            }, 100)
+        },
+        unhighlight: function(element) {
+            $(element).closest('.b-field').removeClass('has-error');
+        },
+        onkeyup: false,
+        onclick: false,
+        rules: {
+            Имя: {
+                required: true,
+            },
+            Телефон: {
+                required: true,
+                myphone: true
+            },
+        },
+        messages: {
+            Имя: {
+                required: "Введите имя",
+            },
+            Телефон: {
+                required: "Введите номер телефона"
+            }
+        },
+        submitHandler: function(form) {
+            var phone = $this.find('input').val();
+            $.ajax({
+                url: 'mail_2.php',
+                data: {phone: phone},
+                type: 'post',
+                success: function (res) {
+                    $('.button-modal').trigger('click');
+                    $('.js-form input').val('');
+                    // $('#centralModalSuccess').modal('show');
+                    // $('.modal-form').modal('hide');
+                },
+                error: function () {
+                    alert('Error!')
+                },
+            });
+            return false;
+        },
+    });
 });
