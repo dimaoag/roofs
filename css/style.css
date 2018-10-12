@@ -449,8 +449,15 @@ input[type=text], textarea {
 header{
     min-height: 100vh;
     position: relative;
-    background: #ffffff url("../images/roofs_header_bg.jpg") center center no-repeat;
-    background-size: cover;
+    background: transparent;
+    /*background: #ffffff url("../images/3-min.png") center center ;*/
+    /*background-size: cover;*/
+}
+.bounce {
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -ms-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
 }
 header:before{
     content: "";

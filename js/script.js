@@ -89,8 +89,6 @@ $('.js-form').each(function(){
                 success: function (res) {
                     $('.button-modal').trigger('click');
                     $('.js-form input').val('');
-                    // $('#centralModalSuccess').modal('show');
-                    // $('.modal-form').modal('hide');
                 },
                 error: function () {
                     alert('Error!')
@@ -100,3 +98,21 @@ $('.js-form').each(function(){
         },
     });
 });
+
+$('.parallax-window').parallax({imageSrc: 'images/3-min.png'});
+
+
+
+/* -------------------
+    Page Hero Parallax
+    ---------------------*/
+$(window).scroll(function(){
+    parallax();
+});
+
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.hero').css('top',-(scrolled*0.0515)+'rem');
+    $('.op-1,.op-2,.op-3').css('opacity',1-(scrolled*.00110));
+    $('.op-2').css('margin-top',scrolled*0.8);
+};
