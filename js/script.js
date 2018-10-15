@@ -112,7 +112,14 @@ $(window).scroll(function(){
 
 function parallax(){
     var scrolled = $(window).scrollTop();
+    var w = $(window).width();
+
     $('.hero').css('top',-(scrolled*0.0515)+'rem');
     $('.op-1,.op-2,.op-3').css('opacity',1-(scrolled*.00110));
-    $('.op-2').css('margin-top',scrolled*0.8);
+    if (w < 992 ){
+        $('.op-2').css('margin-top',scrolled*0.4);
+    } else {
+        $('.op-2').css('margin-top',scrolled*0.7);
+    }
+
 };
