@@ -6,8 +6,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 $message = "";
 if ( $method == 'POST' ) {
     $project_name = "Art Steli";
-    $admin_email = "dimaoag@gmail.com";
-//    $admin_email = "tehnotop100@gmail.com";
+//    $admin_email = "dimaoag@gmail.com";
+    $admin_email = "aciburn@yandex.ru";
     $form_subject = "Заявка с сайта Art Steli";
     $phone_key = 'Телефон';
     $phone_value = '';

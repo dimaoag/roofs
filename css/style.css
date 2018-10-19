@@ -488,6 +488,11 @@ header:before{
     font-weight: bold;
     white-space: nowrap;
     text-transform: uppercase;
+    width: 150px;
+
+}
+.large-logo img{
+    width: 100%;
 }
 .small-logo{
     font-size: 1.12rem;
@@ -626,9 +631,7 @@ header:before{
     align-items: center;
     border-radius: 23px;
 }
-.change-my-color{
-    fill: #ffb600;
-}
+
 
 /* --------------- section-2 ---------*/
 .section-2{
@@ -863,7 +866,10 @@ header:before{
     bottom: 0;
 }
 .review-img img{
-    min-height: 400px;
+    min-height: 420px;
+}
+.no-image{
+    object-fit: contain;
 }
 .review-text{
     padding-top: 30px;
