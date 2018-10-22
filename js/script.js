@@ -115,11 +115,11 @@ function parallax(){
     var w = $(window).width();
 
     $('.hero').css('top',-(scrolled*0.0515)+'rem');
-    $('.op-1,.op-2,.op-3').css('opacity',1-(scrolled*.00110));
     if (w < 992 ){
-        $('.op-2').css('margin-top',scrolled*0.3);
+        // $('.op-2').css('margin-top',scrolled*0.2);
     } else {
-        $('.op-2').css('margin-top',scrolled*0.6);
+        $('.op-1,.op-2,.op-3').css('opacity',1-(scrolled*.00170));
+        $('.op-2').css('margin-top',scrolled*0.2);
     }
 
 };

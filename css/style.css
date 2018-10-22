@@ -608,11 +608,12 @@ header:before{
     margin-bottom: 75px;
 }
 .center-block{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%,-50%);
+    padding-top: 10%;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*width: 100%;*/
+    /*transform: translate(-50%,-50%);*/
 
 }
 .center-block-btn{
@@ -1056,6 +1057,10 @@ header:before{
     }
     .center-block-btn{
         width: 330px;
+    }
+    .center-block{
+        padding-top: 1%;
+        padding-bottom: 30px;
     }
     /*---- section-2 -----*/
 
