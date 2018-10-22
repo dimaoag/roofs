@@ -447,7 +447,7 @@ input[type=text], textarea {
 
 /* --------------- header ---------*/
 header{
-    min-height: 100vh;
+    min-height: 1000px;
     position: relative;
     background: transparent;
     /*background: #ffffff url("../images/3-min.png") center center ;*/
@@ -980,7 +980,9 @@ header:before{
 
 @media all and (max-width: 1199px){
     /*---- section-1 -----*/
-
+    header{
+        min-height: 800px;
+    }
     /*---- section-2 -----*/
     .card-item h4{
         font-size: 1.3rem;
@@ -1011,7 +1013,9 @@ header:before{
 }
 @media all and (max-width: 991px){
     /*---- section-1 -----*/
-
+    header{
+        min-height: 700px;
+    }
     /*---- section-2 -----*/
 
     /*---- section-3 -----*/
@@ -1102,7 +1106,9 @@ header:before{
 }
 @media all and (max-width: 575px){
     /*---- section-1 -----*/
-
+    header{
+        min-height: 600px;
+    }
     /*---- section-2 -----*/
 
     /*---- section-3 -----*/
