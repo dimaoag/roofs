@@ -616,7 +616,7 @@ header:before{
 
 }
 .center-block-btn{
-    width: 400px;
+    width: 420px;
     height: 56px;
     font-size: 2rem;
     border-radius: 28px;
@@ -757,7 +757,7 @@ header:before{
     outline: none;
     border: 1px solid #295c0f;
     padding: 10px;
-    width: 260px;
+    width: 280px;
     border-radius: 20px;
     margin: 15px;
 }
@@ -768,7 +768,7 @@ header:before{
     border-radius: 20px;
     font-size: 1.2rem;
     padding: 0 15px 0 5px;
-    width: 270px;
+    width: 280px;
     margin: 15px;
 }
 .form-btn svg{
@@ -777,7 +777,7 @@ header:before{
 }
 .form-btn-sec3{
     padding: 2px 3px;
-    width: 270px;
+    width: 280px;
     height: 40px;
 }
 .form-btn span{
@@ -896,10 +896,11 @@ header:before{
 }
 .review-username i{
     padding: 1px;
-    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3B5998;
+    /*background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);*/
+    /*background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
 }
 .form-input-sec5, .form-btn-sec5{
     width: 290px;
