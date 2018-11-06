@@ -375,7 +375,7 @@ body {
     min-height: 100%;
     background-color: #ffffff;
     margin: 0;
-    padding: 0;
+    padding: 0!important;
 }
 
 a, a:visited { /* порядок правил для ссылок имеет значение */
