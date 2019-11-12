@@ -9,6 +9,8 @@ if ( $method == 'POST' ) {
 //    $admin_email = "dimaoag@gmail.com";
     $admin_email = "aciburn@yandex.ru";
     $form_subject = "Заявка с сайта Mayster";
+    $username_key = 'Имя';
+    $username_value = '';
     $phone_key = 'Телефон';
     $phone_value = '';
     $message = '';
@@ -21,6 +23,23 @@ if ( $method == 'POST' ) {
             . '<td style="padding: 10px; border: #e9e9e9 1px solid;">' . $phone_value . '</td>'
             . '</tr></table>';
     }
+
+    if (!empty($_POST['phone']) && !empty($_POST['username'])) {
+        $username_value = htmlspecialchars($_POST['username']);
+        $phone_value = htmlspecialchars($_POST['phone']);
+        $message = '<table style="width: 100%;">'
+            . '<tr style="background-color: #f8f8f8;">'
+                . '<td style="padding: 10px; border: #e9e9e9 1px solid;"><b>' . $username_key . '</b></td>'
+                . '<td style="padding: 10px; border: #e9e9e9 1px solid;">' . $username_value . '</td>'
+            . '</tr>'
+            . '<tr style="background-color: #f8f8f8;">'
+                . '<td style="padding: 10px; border: #e9e9e9 1px solid;"><b>' . $phone_key . '</b></td>'
+                . '<td style="padding: 10px; border: #e9e9e9 1px solid;">' . $phone_value . '</td>'
+            . '</tr>'
+            . '</table>';
+    }
+
+
     function adopt($text)
     {
         return '=?UTF-8?B?' . base64_encode($text) . '?=';
